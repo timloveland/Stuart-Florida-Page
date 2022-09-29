@@ -132,6 +132,7 @@ nav .fa-xmark, nav .fa-bars {
 
   .content p {
     font-size: 14px;
+    width: 90%;
   }
 
   .content button {
