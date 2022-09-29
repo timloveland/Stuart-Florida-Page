@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stuart Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/2200adcecc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="banner">
+    <!--NAVBAR-->
+    <nav>
+      <div class="logo">
+        <a href="https://en.wikipedia.org/wiki/Stuart,_Florida" target="_blank">
+          <i class="fa-solid fa-water"></i>
+          <p>FloridaCities</p>
+        </a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#history">HISTORY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <!--END NAVBAR-->
+    <!--TEXT-BOX-->
+    <div class="content">
+      <h1>Stuart, Florida</h1>
+      <p>Welcome to the Sailfish Capital of the world!<br>
+         Come visit our beaches and shop downtown to get a taste of South Florida.
+      </p>
+      <div>
+        <a href="#about"><button type="button"><span></span>EXPLORE</button></a>
+        <a href="https://cityofstuart.us/" target="_blank"><button type="button"><span></span>LEARN MORE</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!--ABOUT section-->
+
+  <section id="about">
+    <div class="about-title">
+      <h2>About Stuart</h2>
+      <p>Here's a brief overview of our awesome city.</p>
+    </div>
+    <div class="row">
+      <div class="about-col-left">
+        <p>Stuart is a city in and the seat of Martin County, Florida, United States.</p>
+        <br>
+        <p>
+          Located on Florida's Treasure Coast, Stuart is the largest of four incorporated municipalities in Martin County.
+          The estimated population is 17,425, according to the 2020 census.
+          Stuart is the 126th largest city in Florida based on official 2019 estimates from the US Census Bureau.
+          It is part of the Port St. Lucie, Florida Metropolitan Statistical Area.
+        </p><br>
+        <p>Stuart is frequently cited as one of the best small towns to visit in the U.S., in large part because of its proximity to the St. Lucie River and Indian River Lagoon.</p>
+      </div>
+      <div class="about-col-right">
+        <img src="images/yacht.jpg" alt="boats in Stuart">
+      </div>
+    </div>
+  </section>
+
+  <!--HISTORY section-->
+
+  <section id="history">
+    <div class="history-title">
+      <h2>History</h2>
+    </div>
+    <div class="row">
+      <div class="history-col-left">
+        <img src="images/sailfish_pointe.webp" alt="boats in Stuart">
+      </div>
+      <div class="history-col-right">
+        <p>In the 18th century, several Spanish galleons were shipwrecked in the Martin County area of Florida's Treasure Coast.
+           The multiple wrecks were reportedly the result of a hurricane, and the ships were carrying unknown quantities of gold and silver. Some of this treasure has since been recovered, and its presence resulted in the region's name.
+        </p><br>
+        <p>In 1832, pirate Pedro Gilbert, who often used a sandbar off the coast as a lure to unsuspecting prey, chased and caught the Mexican, a U.S. merchant ship.
+           Although he attempted to burn the ship and kill the crew, they survived to report the incident, ultimately resulting in the capture and execution of Gilbert and his crew.
+           The bar from which he lured his intended booty is named "Gilbert's Bar" on nautical charts.
+        </p><br>
+        <p>The Treasure Coast area that became Stuart was first settled by non-Native Americans in 1870.
+           In 1875, a United States Lifesaving Station was established on Hutchinson Island, near Stuart.
+           Today, the station is known as Gilbert's Bar House of Refuge and is on the National Register of Historic Places.
+        </p><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="history-col-left hotel">
+        <img src="images/beach_hotel.JPEG" alt="boats in Stuart">
+      </div>
+      <div class="history-col-right">
+        <p>From 1893 to 1895, the area was called Potsdam.
+           This name was chosen by Otto Stypmann, a local landowner originally from Potsdam, Germany.
+           Stypmann, with his brother Ernest, owned the land that would become downtown Stuart.
+           Henry Flagler's Florida East Coast Railway connected the area to Daytona Beach in 1892 and Miami in 1896.
+        </p><br>
+        <p>Potsdam was renamed Stuart in 1895, in honor of Homer Hine (Jack) Stuart Jr., a local landowner who owned a 160 acres around the railway station.
+           Rue, Luckhardt, Krueger, Crary, Armellinis, were some of the prominent settler families.
+        </p><br>
+        <p>When Stuart was incorporated as a town in 1914, it was located in Palm Beach County.
+           In 1925, Stuart was chartered as a city and named the county seat of the newly created Martin County.
+        </p><br>
+        <p>The City of Stuart formally adopted the slogan Sailfish Capital of the World in 1957, following pressure from the Stuart Chamber of Commerce, owing to the many sailfish found in the ocean off Martin County.
+           The slogan is still used by the City. Some have also assigned Guatemala the namesake.
+        </p><br>
+        <p>From 1871 to 2005, 19 hurricanes passed through Stuart, including Isbell (1964), 
+          <a href="https://en.wikipedia.org/wiki/Hurricane_Frances" target="_blank">Frances (2004)</a>, 
+          <a href="https://en.wikipedia.org/wiki/Hurricane_Jeanne" target="_blank">Jeanne (2004)</a>, and 
+          <a href="https://en.wikipedia.org/wiki/Hurricane_Wilma" target="-blank">Wilma (2005)</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!--CONTACT section-->
+
+  <section id="contact">
+    <div class="contact-title">
+      <h2>Contact Us</h2>
+      <p>Fill out the form below to find out more information.</p>
+    </div>
+    <!--FORM-->
+    <div class="form">
+      <form action="" method="post">
+        <input type="text" placeholder="Enter Your Name" name="name">
+        <input type="email" placeholder="Enter Your Email" name="email">
+        <textarea rows="8" placeholder="Enter Your Comment Here" name="textarea"></textarea>
+        <button type="submit" class="form-button"><span></span>Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+
+  <footer>
+    <div class="footer">
+      <p>Made by Tim Loveland | 2022</p>
+    </div>
+  </footer>
+
+  <!--JavaScript for Phone Menu-->
+
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+
+</body>
+</html>

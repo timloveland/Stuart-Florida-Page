@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/causeway.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+}
+
+/* LOGO */
+.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo p {
+  padding: 0 8px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.logo .fa-water {
+  font-size: 24px;
+  color: #fff;
+}
+/* END LOGO */
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+/* TEXT BOX */
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 70px;
+  margin-top: 70px;
+}
+
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #4ca3d8;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  background: #4ca3d8;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+/* END TEXT-BOX */
+
+nav .fa-xmark, nav .fa-bars {
+  display: none;
+}
+
+/* MEDIA for HOMEPAGE */
+@media (max-width: 700px) {
+  .content h1 {
+    font-size: 26px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .content button {
+    margin: 5px 0;
+  }
+
+  .logo .fa-water, .logo p {
+    font-size: 16px;
+    margin-top: 7px;
+  }
+
+  nav ul li {
+    display: block;
+    font-weight: 400;
+    margin: 20px;
+    font-size: 14px;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #4ca3d8;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav ul li::after {
+    height: 1px;
+    bottom: -5px;
+  }
+
+  nav .fa-xmark, nav .fa-bars {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 20px;
+  }
+}
+
+/* ABOUT page */
+#about {
+  width: 80%;
+  margin: auto;
+}
+
+.about-title {
+  text-align: center;
+  margin: 5% 0 7%;
+}
+
+.about-title h2 {
+  padding-bottom: 25px;
+  font-size: 42px;
+}
+
+.row {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-col-right img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about-col-right {
+  width: 100%;
+  flex-basis: 42%;
+}
+
+.about-col-left {
+  width: 100%;
+  flex-basis: 44%;
+}
+
+.about-col-left p {
+  position: relative;
+  top: 25%;
+  
+}
+
+/* SCROLL BEHAVIOR */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+/* SCROLL BEHAVIOR */
+
+/* MEDIA for ABOUT section */
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .about-col-left {
+    margin-top: 20px;
+  }
+
+  .about-col-right img {
+    margin-top: 25px;
+  }
+  
+  .about-title h2 {
+    margin-top: 30px;
+  }
+}
+
+/* HISTORY section */
+#history {
+  width: 80%;
+  margin: auto;
+}
+
+.history-title {
+  text-align: center;
+  margin: 10% 0 3%;
+}
+
+.history-title h2 {
+  padding-bottom: 25px;
+  font-size: 42px;
+}
+
+.history-col-left img {
+  width: 100%;
+  border-radius: 20px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.history-col-left {
+  width: 100%;
+  flex-basis: 44%;
+}
+
+.history-col-right {
+  width: 100%;
+  flex-basis: 42%;
+}
+
+.hotel img {
+  height: 400px
+}
+
+.history-col-right a {
+  color: #4ca3d8;
+}
+
+/* MEDIA for HISTORY section */
+@media (max-width: 700px) {
+  .history-title h2 {
+    margin-top: 85px;
+  }
+
+  .history-col-left img {
+    height: 100%;
+  }
+
+  .history-col-right {
+    margin-top: 30px;
+  }
+}
+/* END MEDIA for HISTORY section */
+/* END HISTORY section */
+
+/* CONTACT section */
+.contact-title {
+  text-align: center;
+  margin: 8% 0 3%;
+}
+
+.contact-title h2 {
+  padding-bottom: 25px;
+  font-size: 42px;
+}
+
+.form {
+  width: 40%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+form input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  background: #e6e6e6;
+  color: #111;
+}
+
+.form-button {
+  color: #4ca3d8;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  transition: 0.5s;
+}
+
+.form-button:hover {
+  color: white;
+}
+
+/* MEDIA for CONTACT section */
+@media (max-width: 700px) {
+  .contact-title {
+    margin-top: 15%;
+    margin-bottom: 10%;
+  }
+
+  .form {
+    width: 80%;
+    margin: auto;
+    margin-right: 40px;
+    margin-bottom: 12%;
+  }
+}
+/* END MEDIA for CONTACT section */
+
+/* FOOTER */
+.footer {
+  height: 60px;
+  width: 100%;
+  background: #4ca3d8;
+  text-align: center;
+}
+
+.footer p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
